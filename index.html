@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PT Hasil Tanpa Batas</title>
+<meta name="description" content="PT Hasil Tanpa Batas (est. 2025), induk usaha Straight Up Digital dan CV Achieve Bersama.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23fff%22/%3E%3Cg transform=%22translate%280.7 15.5%29 scale%28.52%29%22%3E%3Cpath d=%22M47.5 15.9A21 21 0 1 0 51.2 44L64.5 26.3%22 fill=%22none%22 stroke=%22%23F3C623%22 stroke-width=%2213%22 stroke-linejoin=%22round%22/%3E%3Cpath d=%22M70.5 18.5A21 21 0 1 1 68.8 44%22 fill=%22none%22 stroke=%22%2310375C%22 stroke-width=%2213%22/%3E%3Cpath d=%22M73.5 15L53.4 21.4 69 33.2z%22 fill=%22%23F3C623%22 stroke=%22%23F3C623%22 stroke-width=%221.5%22 stroke-linejoin=%22round%22/%3E%3C/g%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAEKElEQVRYhc2XbUyVZRjHf8/LeUnAQJDlYQoGYcoUS1xUW2SttUStKX1zI1hu2YIPWCs3t1wvy8iaTYvNDw2xNV/WnESlrhFriNZIsDG2RCyjEQKecQ5H3s7zPFdfOM/h6RzQD+rp/+m+r+e+rv//vq77vp/7hhkQkUwReU9EOkQkJLcPIRG5ICLvikgm8SAiL4pI8DaSzoagiJTFI7fuAnkEVkSEMp2Sy0BK3NTcOQSBPBWoTgA5wHygShGRTqAwAQIAOhQRGQWSEyRgVBERSRA5AOotjbIm7pgAPZ5RwsOErx3FGG7EGr8CCIo7E23+I7gXVaAmr4obrLdvgIaTLZxp68QfCAFQVJDLM4+tZuvGJ9A1LcYnpgRm4CwTPTVI+PosmlU8OTtxLapwWD89/C3v1B3FsuJXdEXuYg7s2sZDy5f+J5qDvI3x7oo5yEFxpaMveNZhO9P6K60tdbzw8NCsft29fWyu/pCeq/3OeJEMiBFg7OJ6ZOqa/VG793H0jA0oqhdztANj+CTe5V+gJReCNYUx8iOmvxnzRhfGjR4Otvio/S6HjU+uZU1BLsEbY5z44Wcu/RklzV18H+eP7LHLYQsID3zJ5B+77YHuJTW4s151TsMaB/UeAMa7yzGD50Cs6Vy66bJ2w7zVFBfm2y5hw+T12noaGlts26EPqtm0bq2zBIb/lD1ATV6FO2t7bB6nyQG8D+xD0ZKA6Zl4sigu3uIgB3DpGh+/+RLZvoW27ej3rdGQkYZM/G0b9bR1gBIrwIYweWUXYowCJqCg6gtAiV3lALqmsaGkyO73DUTXWFSAhKMeStzdaSP8TwOG/7Td15JX4FpUPqdP0jyv3Y5sUYcA1bvENpqBtlkDWaHfmLy6Z4bWVLz5dejp6+cUcP7i73b7waW+WAFaaskMAecID30dE0Qm+xm/9BrY2VLw5NWieHz4AyHePnCEYGgsxu9k8y/81N5t9x9dvSw6AXsbhocY63wOMUbs4K7MMvSMUlCTsEYvMNV/0HFGuHwv48l+i6aWdnbU1jPoD5Cf42Pnti2sKbifYGic46fP8tlXpzBME4DUlCTaj39EemqKUwCAMdzIRE/NnKmMQE97Cu+yz5kyoHT7+7R3Xb4lv307Kyl/fp3dd5yEesYmvHl7QfXcnDx/Pyg6bpfOsU92sDI/e04fTVXZ+0a5g5x4/wIAa6yH8MAhjOFGxJyuqaKjJa/ElfUKetrTMQRhw6T+RDP7DjfRP+h3EJeWrKFqaylFBbkxfnPfB8REwtcRM4jqWXzTzETQP+jn8l8DpKem4MtMI23+7Ped/8WFZDSB/EEV6E2ggF4VaEqggG8S+TAJAHmqoiiDQCVwNxejAJWKogxHLSJlIhK4C+/CERHZHOF1/PRFZCFQBZQC+bfxwRICLk2vt/0zZ/4vTrUzYBpaR14AAAAASUVORK5CYII=">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<meta name="theme-color" content="#05080f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Oswald:wght@600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+  document.documentElement.classList.add('js');
+  try { if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('gerak'); } catch (e) {}
+</script>
+<style>
+/* VOICE    elegan dan profesional, gaya studio web (referensi konsep Framer di Threads)
+   IDEA     malam yang diterangi: latar hitam-navy, cahaya emas dari logo berpendar dari bawah
+   PICTURE  hero: judul besar + kartu kaca melayang berisi simbol infinity dan dua unit usaha, aurora emas-biru
+   COLOUR   hitam navy #05080f, panel #0c1322, emas logo #F3C623, biru #2f63d8, putih; satu palet tetap (gelap)
+   TYPE     Plus Jakarta Sans 700 judul + Instrument Serif miring untuk kata aksen; Oswald untuk wordmark logo
+   LAYOUT   satu halaman panjang: hero, marquee, pernyataan menyala per kata, kartu unit bertumpuk, angka, alur, kontak, footer wordmark raksasa */
+:root{color-scheme:dark;--bg:#05080f;--panel:#0c1322;--panel2:#111b30;--ink:#f3f5f9;--muted:#9aa5bb;--line:rgba(255,255,255,.09);--gold:#F3C623;--navyLogo:#10375C;--navy:#163A6B;--blue:#2f63d8}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:90px}
+html.gerak{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Plus Jakarta Sans",system-ui,sans-serif;overflow-x:clip;-webkit-font-smoothing:antialiased}
+a{color:var(--gold)}
+svg{max-width:100%}
+.wrap{max-width:1240px;margin-inline:auto}
+.band{padding-block:clamp(64px,9vw,128px);padding-left:max(5vw,16px);padding-right:max(5vw,16px)}
+h1,h2,h3{font-weight:700;line-height:1.05;letter-spacing:-.03em;text-wrap:balance;margin:0 0 .45em}
+h2{font-size:clamp(32px,4.6vw,56px)}
+h3{font-size:22px;letter-spacing:-.015em}
+em.serif{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400;color:var(--gold);letter-spacing:0}
+p{margin:0 0 1em;max-width:62ch}
+.muted{color:var(--muted)}
+.chip{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--ink);background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:999px;padding:7px 14px;margin-bottom:22px}
+.chip i{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold)}
+.alert{position:relative;z-index:30;background:#b3261e;color:#fff;padding:10px max(5vw,16px);font-size:14px;font-weight:500}
+.alert code{background:rgba(255,255,255,.18);padding:1px 6px;border-radius:4px}
+#progres{position:fixed;top:0;left:0;height:3px;width:100%;background:linear-gradient(90deg,var(--gold),#ffe58a);transform-origin:0 50%;transform:scaleX(0);z-index:40}
+/* header */
+header{position:sticky;top:0;z-index:20;padding:14px max(5vw,16px) 0}
+.nav{max-width:1240px;margin-inline:auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:8px 8px 8px 16px;border-radius:999px;border:1px solid transparent;transition:background .3s,border-color .3s,backdrop-filter .3s}
+header.kaca .nav{background:rgba(12,19,34,.72);border-color:var(--line);backdrop-filter:blur(14px)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);margin-right:auto}
+.logo svg{width:52px;height:28px;flex:none}
+.logo b{display:block;font:600 17px/1.05 Oswald,"Arial Narrow",sans-serif;letter-spacing:.02em}
+.logo small{display:block;font-size:12px;font-weight:600;color:var(--muted)}
+.links{display:flex;gap:2px;overflow-x:auto}
+.links a{flex:none;color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;padding:10px 14px;border-radius:999px;min-height:44px;display:flex;align-items:center;transition:color .2s,background .2s}
+.links a:hover{color:var(--ink);background:rgba(255,255,255,.06)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 24px;border-radius:999px;font:700 15px/1.2 "Plus Jakarta Sans",sans-serif;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.btn-g{background:var(--gold);color:#111}
+.btn-g:hover{box-shadow:0 10px 40px rgba(243,198,35,.35)}
+.btn-o{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.18);color:var(--ink)}
+.btn-o:hover{background:rgba(255,255,255,.1)}
+.btn .pnh{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#111;color:var(--gold);font-size:13px}
+/* hero */
+.hero{position:relative;overflow:hidden;margin-top:-76px;padding-top:150px;min-height:min(100svh,940px);display:flex;flex-direction:column}
+.aurora{position:absolute;left:-10%;right:-10%;bottom:-22%;height:72%;pointer-events:none;z-index:0}
+.aurora span{position:absolute;inset:0;border-radius:50%}
+.aurora .a1{background:radial-gradient(40% 55% at 30% 70%,rgba(243,198,35,.38),transparent 70%)}
+.aurora .a2{background:radial-gradient(38% 50% at 68% 72%,rgba(47,99,216,.42),transparent 70%)}
+.aurora .a3{background:radial-gradient(25% 35% at 50% 80%,rgba(255,229,138,.35),transparent 70%)}
+.gerak .aurora .a1{animation:geser 14s ease-in-out infinite alternate}
+.gerak .aurora .a2{animation:geser 18s ease-in-out infinite alternate-reverse}
+.gerak .aurora .a3{animation:denyut 7s ease-in-out infinite alternate}
+@keyframes geser{from{transform:translateX(-6%) scale(1)}to{transform:translateX(6%) scale(1.08)}}
+@keyframes denyut{from{opacity:.6}to{opacity:1}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--bg) 0%,transparent 30%,transparent 70%,rgba(5,8,15,.35) 100%);pointer-events:none}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:clamp(24px,4vw,64px);align-items:center;flex:1}
+.hero h1{font-size:clamp(40px,5.6vw,74px);margin-bottom:22px}
+.hero .sub{font-size:18px;color:#c9d0de;max-width:52ch}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.mengapung{position:relative;height:510px}
+.kartu{position:absolute;background:linear-gradient(160deg,rgba(255,255,255,.1),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.14);border-radius:24px;padding:18px 20px;backdrop-filter:blur(16px);box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.kartu small{display:block;color:var(--muted);font-size:13px;font-weight:500}
+.kartu b{display:block;font-size:17px;letter-spacing:-.01em}
+.k1{left:8%;top:0;width:min(290px,80%);padding:22px}
+.k1 svg{width:100%;height:auto;display:block;margin-bottom:14px}
+.k2{right:-2%;top:262px;width:min(250px,62%)}
+.k3{left:-3%;top:400px;width:min(240px,56%)}
+.k2 .ttk,.k3 .ttk{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;vertical-align:1px}
+.gerak .k1{animation:apung 7s ease-in-out infinite}
+.gerak .k2{animation:apung 8s 1s ease-in-out infinite}
+.gerak .k3{animation:apung 9s 2s ease-in-out infinite}
+@keyframes apung{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.hero-bawah{position:relative;z-index:2;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-top:48px}
+.stat{display:flex;gap:36px}
+.stat b{display:block;font-size:28px;letter-spacing:-.02em}
+.stat span{font-size:13px;color:var(--muted)}
+.gulir{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:10px}
+.gulir i{width:22px;height:34px;border:1.5px solid rgba(255,255,255,.35);border-radius:12px;position:relative}
+.gulir i::after{content:"";position:absolute;left:50%;top:7px;width:3px;height:7px;margin-left:-1.5px;border-radius:2px;background:var(--gold)}
+.gerak .gulir i::after{animation:gulir 1.8s ease-in-out infinite}
+@keyframes gulir{0%{transform:translateY(0);opacity:1}100%{transform:translateY(12px);opacity:0}}
+/* ubin logo: simbol asli (emas + navy) di atas latar putih */
+.ubin{display:inline-grid;place-items:center;width:58px;height:40px;border-radius:11px;background:#fff;flex:none;box-shadow:0 0 0 1px rgba(255,255,255,.08)}
+.ubin svg{width:46px;height:27px}
+.logo .ubin+span{display:block}
+.k1.putih{background:#fff;color:#14161a;border-color:#fff;text-align:center;padding:30px 26px 24px}
+.k1.putih svg{width:72%;margin:0 auto 16px}
+.k1.putih .wm{display:block;white-space:nowrap;font:600 19px/1 Oswald,"Arial Narrow",sans-serif;letter-spacing:.02em;color:#14161a}
+.k1.putih .est{display:block;font-weight:700;font-size:16px;color:#14161a;margin-top:6px}
+.k1.putih .ket{display:block;border-top:1px solid #e6e8ee;margin-top:16px;padding-top:12px;font-size:13px;color:#5b6375}
+/* pilar */
+.pilar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
+.pilar div{padding:30px 28px 8px 0;margin-right:28px;border-right:1px solid var(--line)}
+.pilar div:last-child{border-right:0;margin-right:0}
+.pilar svg{width:40px;height:40px;stroke:var(--gold);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin-bottom:18px}
+/* footer korporat */
+.kolom{position:relative;display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:32px}
+.kolom h4{font-size:13px;font-weight:600;color:var(--muted);margin:0 0 14px;letter-spacing:.01em}
+.kolom ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:15px}
+.kolom ul a{color:var(--ink);text-decoration:none}
+.kolom ul a:hover{color:var(--gold)}
+.kolom .muted{font-size:14px}
+/* marquee */
+.marquee{border-block:1px solid var(--line);overflow:hidden;padding:18px 0;background:var(--bg)}
+.mq{display:flex;width:max-content;gap:0}
+.gerak .mq{animation:jalan 60s linear infinite}
+.mq span{font-size:clamp(15px,1.5vw,19px);font-weight:500;letter-spacing:.01em;white-space:nowrap;padding-inline:26px;color:var(--muted);display:flex;align-items:center;gap:52px}
+.mq span::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold);flex:none}
+@keyframes jalan{to{transform:translateX(-50%)}}
+html:not(.gerak) .mq{flex-wrap:wrap;width:auto;justify-content:center;row-gap:10px}
+/* pernyataan */
+.pernyataan{position:relative;height:220vh}
+.pernyataan .lekat{position:sticky;top:0;height:100vh;display:flex;align-items:center;padding:0 max(5vw,16px)}
+.kalimat{max-width:1100px;margin-inline:auto;font-size:clamp(28px,4.2vw,54px);font-weight:700;letter-spacing:-.03em;line-height:1.15}
+.kalimat .k{color:rgba(255,255,255,.16);transition:color .35s}
+.kalimat .k.on{color:var(--ink)}
+.kalimat .k.emas.on{color:var(--gold)}
+html:not(.gerak) .pernyataan{height:auto}
+html:not(.gerak) .pernyataan .lekat{position:static;height:auto;padding-block:96px}
+html:not(.gerak) .kalimat .k{color:var(--ink)}
+/* unit bertumpuk */
+.kepala{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:40px}
+.kepala p{margin:0}
+.tumpuk{display:grid;gap:28px}
+.unit{position:sticky;top:110px;background:var(--panel);border:1px solid var(--line);border-radius:32px;padding:clamp(24px,4vw,52px);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(20px,4vw,56px);overflow:hidden;transform-origin:50% 0;box-shadow:0 -20px 60px rgba(0,0,0,.5)}
+@media(min-width:901px){.unit{min-height:470px}}
+.unit:nth-child(2){top:134px;background:var(--panel2)}
+.unit:nth-child(3){top:158px;background:#15213a}
+.unit .no{font-size:13px;color:var(--muted);font-weight:600;margin-bottom:18px;display:block}
+.unit h3{font-size:clamp(28px,3.4vw,42px);letter-spacing:-.03em}
+.str-judul{display:flex;align-items:flex-end;flex-wrap:wrap;gap:4px 14px}
+.str-judul img{height:clamp(40px,4.4vw,56px);width:auto;display:block}
+.str-judul span{font-size:clamp(26px,3vw,38px);line-height:1;padding-bottom:2px}
+.kartu b.str-mini{display:flex;align-items:flex-end;gap:7px;margin:4px 0 2px}
+.str-mini img{height:22px;width:auto;display:block}
+.str-mini span{line-height:1}
+.layanan{list-style:none;padding:0;margin:0;display:grid;gap:10px;align-content:start}
+.layanan li{border:1px solid var(--line);border-radius:16px;padding:14px 16px;background:rgba(255,255,255,.03)}
+.layanan b{display:block;font-size:15px}
+.layanan span{font-size:14px;color:var(--muted)}
+.kosong{display:inline-block;border:1.5px dashed #c99700;background:#2e2808;color:#ffe680;font-size:13px;font-weight:600;padding:4px 10px;border-radius:8px}
+.cahaya{position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(243,198,35,.22),transparent 65%);pointer-events:none}
+/* angka */
+.angka{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line)}
+.angka div{padding:28px 24px 8px 0;border-right:1px solid var(--line);margin-right:24px}
+.angka div:last-child{border-right:0}
+.angka b{display:block;font-size:clamp(44px,5.6vw,76px);font-weight:700;letter-spacing:-.04em;line-height:1;white-space:nowrap;background:linear-gradient(180deg,#fff,#c8cfdd);-webkit-background-clip:text;background-clip:text;color:transparent}
+.angka span{display:block;margin-top:12px;color:var(--muted);font-size:15px}
+/* alur */
+.alur{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;padding-top:44px}
+.alur .rel{position:absolute;left:0;right:0;top:12px;height:2px;background:var(--line)}
+.alur .isi{position:absolute;inset:0;background:linear-gradient(90deg,var(--gold),#ffe58a);transform-origin:0 50%;transform:scaleX(0)}
+html:not(.gerak) .alur .isi{transform:none}
+.alur .titik{position:absolute;top:-38px;left:0;width:22px;height:22px;border-radius:50%;background:var(--bg);border:2px solid var(--gold)}
+.langkah{position:relative}
+.langkah small{color:var(--gold);font-weight:700;font-size:13px}
+/* pendiri & data */
+.dua{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:28px;padding:clamp(24px,3.5vw,44px)}
+dl.info{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px 24px;margin:0}
+dl.info dt{color:var(--muted)}
+dl.info dd{margin:0;font-weight:600}
+/* kontak */
+.kontak-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,4vw,56px);align-items:start}
+form{display:grid;gap:16px}
+.dua-kolom{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+label{font-weight:600;font-size:14px;display:block;margin-bottom:6px;color:#dfe4ee}
+input,select,textarea{width:100%;font:16px/1.4 "Plus Jakarta Sans",sans-serif;color:var(--ink);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:13px 15px;min-height:50px}
+select option{background:var(--panel);color:var(--ink)}
+textarea{min-height:130px;resize:vertical}
+.err{color:#ff8a80;font-size:14px;font-weight:600;margin-top:6px}
+[aria-invalid=true]{border-color:#ff8a80}
+.hasil{border:1px solid var(--gold);border-radius:18px;padding:18px;background:rgba(243,198,35,.05);margin-top:18px}
+.hasil pre{white-space:pre-wrap;font:14px/1.5 "Plus Jakarta Sans",sans-serif;background:rgba(0,0,0,.3);border:1px solid var(--line);border-radius:12px;padding:12px;margin:10px 0 14px;color:#dfe4ee}
+.gagal{border-color:#ff8a80;background:rgba(255,138,128,.06)}
+.kantor{border-top:1px solid var(--line);padding:18px 0}
+.kantor b{display:block}
+/* footer */
+footer{position:relative;overflow:hidden;border-top:1px solid var(--line);padding:clamp(48px,7vw,96px) max(5vw,16px) 28px}
+footer .glow{position:absolute;left:50%;bottom:-260px;width:900px;height:500px;margin-left:-450px;background:radial-gradient(closest-side,rgba(243,198,35,.25),transparent);pointer-events:none}
+.kaki{position:relative;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-start}
+.raksasa{position:relative;max-width:1240px;margin-inline:auto;overflow:hidden;font:600 10vw/.9 Oswald,"Arial Narrow",sans-serif;text-transform:uppercase;letter-spacing:-.01em;margin:64px auto 28px;background:linear-gradient(180deg,rgba(255,255,255,.2) 0%,rgba(255,255,255,.03) 90%);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap;text-align:center}
+.hak{position:relative;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px;color:var(--muted)}
+/* animasi muncul */
+.gerak .rv{opacity:0;transform:translateY(32px);filter:blur(6px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1),filter .9s}
+.gerak .rv.in{opacity:1;transform:none;filter:none}
+.gerak .rv.d1{transition-delay:.1s}.gerak .rv.d2{transition-delay:.2s}.gerak .rv.d3{transition-delay:.3s}
+@media(max-width:900px){.kolom{grid-template-columns:repeat(2,minmax(0,1fr))}.pilar{grid-template-columns:minmax(0,1fr)}.pilar div{border-right:0;margin-right:0;border-bottom:1px solid var(--line);padding-bottom:20px}.hero-grid,.kontak-grid,.unit{grid-template-columns:minmax(0,1fr)}.mengapung{height:auto;display:grid;gap:12px}.kartu{position:relative;inset:auto;width:auto}.k1{width:auto}.angka{grid-template-columns:repeat(2,minmax(0,1fr))}.angka div:nth-child(2){border-right:0}.unit{position:relative;top:auto!important}}
+@media(max-width:640px){.kolom{grid-template-columns:minmax(0,1fr)}.links{order:3;width:100%}.links a{padding:10px 10px}.nav{border-radius:24px}.nav>.btn{display:none}.alur,.dua,.dua-kolom{grid-template-columns:minmax(0,1fr)}.alur .rel{display:none}.stat{gap:24px}dl.info{grid-template-columns:minmax(0,1fr)}dl.info dd{margin-bottom:8px}.hero{padding-top:150px}.angka div{padding-right:12px;margin-right:12px}}
+</style>
+</head>
+<body>
+<div id="progres"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="-4 -4 128 72">
+    <path d="M47.5 15.9A21 21 0 1 0 51.2 44L64.5 26.3" fill="none" stroke="#F3C623" stroke-width="13" stroke-linejoin="round"/>
+    <path d="M70.5 18.5A21 21 0 1 1 68.8 44" fill="none" stroke="#ffffff" stroke-width="13"/>
+    <path d="M73.5 15L53.4 21.4 69 33.2z" fill="#F3C623" stroke="#F3C623" stroke-width="1.5" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="markAsli" viewBox="-4 -4 128 72">
+    <path d="M47.5 15.9A21 21 0 1 0 51.2 44L64.5 26.3" fill="none" stroke="#F3C623" stroke-width="13" stroke-linejoin="round"/>
+    <path d="M70.5 18.5A21 21 0 1 1 68.8 44" fill="none" stroke="#10375C" stroke-width="13"/>
+    <path d="M73.5 15L53.4 21.4 69 33.2z" fill="#F3C623" stroke="#F3C623" stroke-width="1.5" stroke-linejoin="round"/>
+  </symbol>
+</svg>
+
+<div class="alert" id="alertWa" hidden>Nomor WhatsApp perusahaan belum diisi, jadi tombol WhatsApp belum bisa dipakai. Isi <code>nomorWa</code> di objek <code>DATA</code> pada bagian script.</div>
+
+<header id="atas">
+  <nav class="nav" aria-label="Utama">
+    <a class="logo" href="#beranda" aria-label="PT Hasil Tanpa Batas, ke atas">
+      <span class="ubin"><svg aria-hidden="true"><use href="#markAsli"/></svg></span>
+      <span><b>PT. HASIL TANPA BATAS</b><small>est. 2025</small></span>
+    </a>
+    <div class="links">
+      <a href="#tentang">Tentang</a>
+      <a href="#unit-usaha">Unit usaha</a>
+      <a href="#cara-kerja">Cara kerja</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+    <a class="btn btn-g" href="#kontak">Konsultasi</a>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero band" id="beranda">
+  <div class="aurora" aria-hidden="true"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+  <div class="wrap hero-grid" id="heroIsi">
+    <div>
+      <span class="chip rv"><i></i>Induk usaha &middot; est. 2025</span>
+      <h1 class="rv d1">Satu induk usaha untuk bisnis yang tumbuh <em class="serif">tanpa batas.</em></h1>
+      <p class="sub rv d2">PT Hasil Tanpa Batas menaungi Straight Up Digital dan CV Achieve Bersama. Ceritakan target bisnis Anda, kami hubungkan ke tim yang tepat di dalam grup.</p>
+      <div class="acts rv d3">
+        <a class="btn btn-g" href="#kontak">Ceritakan kebutuhan Anda <span class="pnh">&rarr;</span></a>
+        <a class="btn btn-o" href="#unit-usaha">Lihat unit usaha</a>
+      </div>
+    </div>
+    <div class="mengapung" aria-label="Ringkasan grup">
+      <div class="kartu k1 putih rv d1" role="img" aria-label="Logo PT. Hasil Tanpa Batas, est. 2025">
+        <svg viewBox="-4 -4 128 72" aria-hidden="true"><use href="#markAsli"/></svg>
+        <span class="wm">PT. HASIL TANPA BATAS</span><span class="est">est. 2025</span>
+      </div>
+      <div class="kartu k2 rv d2"><small><span class="ttk" style="background:#3774FC"></span>Unit usaha</small><b class="str-mini"><img src="data:image/png;base64,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" alt="Straight Up" width="640" height="142"><span>Digital</span></b><small>Performance marketing &middot; Yogyakarta &amp; BSD</small></div>
+      <div class="kartu k3 rv d3"><small><span class="ttk" style="background:var(--gold)"></span>Unit usaha</small><b>CV Achieve Bersama</b><small>Bagian dari grup</small></div>
+    </div>
+  </div>
+  <div class="wrap hero-bawah" style="width:100%">
+    <div class="stat rv">
+      <div><b>2025</b><span>Tahun berdiri</span></div>
+      <div><b>2</b><span>Unit usaha</span></div>
+      <div><b>2 kota</b><span>Yogyakarta &amp; BSD</span></div>
+    </div>
+    <div class="gulir"><i></i>Gulir untuk mengenal kami</div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-label="Bidang layanan grup">
+  <div class="mq" id="mq"></div>
+</div>
+
+<!-- PERNYATAAN -->
+<section class="pernyataan" id="tentang" aria-label="Tentang PT Hasil Tanpa Batas">
+  <div class="lekat">
+    <p class="kalimat" id="kalimat">PT Hasil Tanpa Batas menjaga arah, standar kerja, dan tata kelola grup, supaya setiap unit bisa fokus pada satu hal: hasil nyata untuk klien.</p>
+  </div>
+</section>
+
+<!-- PERAN -->
+<section class="band" style="padding-top:0">
+  <div class="wrap">
+    <h2 class="rv" style="margin-bottom:36px">Peran PT Hasil Tanpa Batas</h2>
+    <div class="pilar">
+      <div class="rv"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15"/><path d="M20 9v4M20 27v4M9 20h4M27 20h4M16 24l2.5-6.5L25 15l-2.5 6.5z"/></svg><h3>Arah</h3><p class="muted">Menetapkan arah dan target bersama untuk setiap unit usaha di dalam grup.</p></div>
+      <div class="rv d1"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 12h24M8 20h24M8 28h16"/><path d="M27 27l3 3 5-6"/></svg><h3>Standar kerja</h3><p class="muted">Menjaga standar layanan dan pelaporan yang konsisten di seluruh unit.</p></div>
+      <div class="rv d2"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 6l12 5v8c0 8-5.5 13-12 15-6.5-2-12-7-12-15v-8z"/><path d="M15 20l4 4 7-8"/></svg><h3>Tata kelola</h3><p class="muted">Memastikan pengelolaan usaha yang tertib dan bisa dipertanggungjawabkan.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- UNIT USAHA -->
+<section class="band" id="unit-usaha" style="padding-top:0">
+  <div class="wrap">
+    <div class="kepala">
+      <h2 class="rv">Unit usaha di bawah <em class="serif">satu arah.</em></h2>
+      <p class="muted rv d1">Setiap unit fokus pada keahliannya. Induk usaha menjaga standar dan pengelolaannya.</p>
+    </div>
+    <div class="tumpuk" id="tumpuk">
+      <article class="unit">
+        <div>
+          <span class="no">Unit usaha &middot; berdiri Agustus 2024</span>
+          <h3 class="str-judul"><img src="data:image/png;base64,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" alt="Straight Up" width="640" height="142"><span>Digital</span></h3>
+          <p class="muted">Agency performance marketing dari Yogyakarta, dengan cabang di BSD, Tangerang Selatan, yang dibuka pada ulang tahun keduanya. Fokusnya satu: iklan yang menghasilkan penjualan, dengan laporan yang bisa dipertanggungjawabkan.</p>
+          <p style="margin:0">Instagram: <a id="igStr" href="#">@straightup.digital</a></p>
+        </div>
+        <ul class="layanan">
+          <li><b>Performance marketing</b><span>Perencanaan dan pengelolaan iklan berbasis target penjualan.</span></li>
+          <li><b>Iklan media sosial</b><span>Kampanye berbayar di platform media sosial untuk brand.</span></li>
+          <li><b>TikTok Ads dan GMV Max</b><span>Iklan TikTok dan kampanye GMV Max untuk TikTok Shop.</span></li>
+          <li><b>Analitik dan laporan</b><span>Laporan performa iklan rutin untuk setiap klien.</span></li>
+        </ul>
+        <div class="cahaya"></div>
+      </article>
+      <article class="unit">
+        <div>
+          <span class="no">Unit usaha</span>
+          <h3>CV Achieve Bersama</h3>
+          <p class="muted" data-isi="profilAchieve" data-cadangan="Unit usaha di bawah PT Hasil Tanpa Batas. Informasi lengkap tentang layanan CV Achieve Bersama dapat ditanyakan langsung kepada tim kami."></p>
+        </div>
+        <div style="align-self:end"><p class="muted" data-isi="layananAchieve" data-cadangan=""></p><a class="btn btn-o" href="#kontak">Tanya tentang CV Achieve Bersama</a></div>
+        <div class="cahaya"></div>
+      </article>
+      <article class="unit">
+        <div>
+          <span class="no">Kemitraan</span>
+          <h3>Kerja sama dengan induk usaha</h3>
+          <p class="muted">Untuk kerja sama di tingkat grup, hubungi PT Hasil Tanpa Batas langsung. Kami teruskan ke unit yang paling relevan.</p>
+        </div>
+        <div style="align-self:end"><a class="btn btn-g" href="#kontak">Ajukan kerja sama <span class="pnh">&rarr;</span></a></div>
+        <div class="cahaya"></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ANGKA -->
+<section class="band" style="padding-top:0">
+  <div class="wrap">
+    <h2 class="rv" style="margin-bottom:36px">Grup dalam angka</h2>
+    <div class="angka" id="angka"></div>
+  </div>
+</section>
+
+<!-- CARA KERJA -->
+<section class="band" id="cara-kerja" style="background:linear-gradient(180deg,var(--bg),#0a1120)">
+  <div class="wrap">
+    <h2 class="rv">Dari kebutuhan ke hasil, dalam tiga langkah</h2>
+    <div class="alur" id="alur">
+      <div class="rel"><div class="isi" id="alurIsi"></div></div>
+      <div class="langkah rv"><span class="titik"></span><small>Langkah 1</small><h3>Ceritakan kebutuhan</h3><p class="muted">Isi formulir singkat: usaha Anda, target, dan kendala yang sedang dihadapi.</p></div>
+      <div class="langkah rv d1"><span class="titik"></span><small>Langkah 2</small><h3>Kami arahkan</h3><p class="muted">Kebutuhan Anda diteruskan ke unit usaha yang paling sesuai di dalam grup.</p></div>
+      <div class="langkah rv d2"><span class="titik"></span><small>Langkah 3</small><h3>Tim menghubungi Anda</h3><p class="muted">Tim terkait membalas lewat WhatsApp untuk membahas langkah selanjutnya.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PENDIRI -->
+<section class="band" style="padding-top:0">
+  <div class="wrap">
+    <div class="panel rv">
+      <span class="chip"><i></i>Pendiri</span>
+      <h3 style="font-size:30px">Alda Rezma Dwi Cantika</h3>
+      <p class="muted" style="margin:0">Founder dan CEO Straight Up Digital. Lulusan S1 Ilmu Komunikasi dan pemegang sertifikasi BNSP Digital Marketing, dengan pengalaman langsung mengelola TikTok Ads dan kampanye GMV Max untuk brand.</p>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAK -->
+<section class="band" id="kontak" style="position:relative;overflow:hidden">
+  <div class="aurora" aria-hidden="true" style="bottom:-55%;opacity:.55"><span class="a1"></span><span class="a2"></span></div>
+  <div class="wrap kontak-grid" style="position:relative">
+    <div class="panel rv">
+      <h2 style="font-size:clamp(30px,3.6vw,44px)">Ceritakan kebutuhan <em class="serif">Anda.</em></h2>
+      <p class="muted">Pesan tersusun otomatis dan dikirim lewat WhatsApp ke tim kami.</p>
+      <form id="formLead" novalidate>
+        <div class="dua-kolom">
+          <div><label for="fNama">Nama lengkap</label><input id="fNama" autocomplete="name" maxlength="80"><div class="err" id="eNama" hidden></div></div>
+          <div><label for="fUsaha">Nama usaha / brand</label><input id="fUsaha" autocomplete="organization" maxlength="80"></div>
+        </div>
+        <div class="dua-kolom">
+          <div><label for="fWa">Nomor WhatsApp Anda</label><input id="fWa" inputmode="tel" autocomplete="tel" placeholder="0812xxxxxxx" maxlength="20"><div class="err" id="eWa" hidden></div></div>
+          <div><label for="fUnit">Tujuan</label>
+            <select id="fUnit">
+              <option>Belum tahu, mohon diarahkan</option>
+              <option>Straight Up Digital (iklan dan digital marketing)</option>
+              <option>CV Achieve Bersama</option>
+              <option>Kerja sama dengan PT Hasil Tanpa Batas</option>
+            </select></div>
+        </div>
+        <div><label for="fPesan">Kebutuhan Anda</label><textarea id="fPesan" maxlength="800" placeholder="Contoh: brand fashion, ingin menaikkan penjualan di TikTok Shop"></textarea><div class="err" id="ePesan" hidden></div></div>
+        <div><button class="btn btn-g" type="submit">Susun pesan WhatsApp <span class="pnh">&rarr;</span></button></div>
+      </form>
+      <div id="hasil" class="hasil" hidden></div>
+    </div>
+    <div class="rv d1">
+      <h3>Kantor</h3>
+      <div id="kantor"></div>
+      <div class="kantor" id="barisEmail"><b>Email</b><span data-isi="email" data-label="email perusahaan"></span></div>
+      <div class="kantor"><b>WhatsApp</b><span data-isi="nomorWaTampil" data-label="nomor WhatsApp perusahaan"></span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="glow"></div>
+  <div class="wrap kolom">
+    <div>
+      <a class="logo" href="#beranda" style="margin-bottom:16px"><span class="ubin"><svg aria-hidden="true"><use href="#markAsli"/></svg></span><span><b>PT. HASIL TANPA BATAS</b><small>est. 2025</small></span></a>
+      <p class="muted" style="margin:0">Induk usaha dari Straight Up Digital dan CV Achieve Bersama.</p>
+    </div>
+    <div><h4>Navigasi</h4><ul><li><a href="#tentang">Tentang</a></li><li><a href="#unit-usaha">Unit usaha</a></li><li><a href="#cara-kerja">Cara kerja</a></li><li><a href="#kontak">Kontak</a></li></ul></div>
+    <div><h4>Kantor</h4><ul id="kakiKantor"></ul></div>
+    <div><h4>Hubungi kami</h4><ul id="kakiKontak"></ul></div>
+  </div>
+  <div class="raksasa" id="raksasa" aria-hidden="true"><span id="raksasaTeks" style="display:inline-block">Hasil Tanpa Batas</span></div>
+  <div class="wrap hak"><span>&copy; <span id="tahun">2026</span> PT Hasil Tanpa Batas. Hak cipta dilindungi.</span><span>Yogyakarta &middot; BSD, Tangerang</span></div>
+</footer>
+
+<script>
+{
+/* =========================================================
+ * DATA PERUSAHAAN — ubah di sini saja.
+ * Nilai kosong ('') otomatis tampil sebagai kotak kuning
+ * "Belum diisi" di website, jadi tidak ada yang terlewat.
+ * ========================================================= */
+const DATA = {
+  nomorWa: '+62 822-9556-0240',              // nomor WA penerima leads, mis. '081234567890' atau '6281234567890'
+  email: '',                // kosong = baris email disembunyikan; isi mis. 'halo@hasiltanpabatas.co.id'
+  profilAchieve: '',        // 1-2 kalimat bidang usaha CV Achieve Bersama
+  layananAchieve: '',       // layanan/produk CV Achieve Bersama
+  instagramStr: 'straightup.digital',
+  kantor: [
+    { kota: 'Yogyakarta, kantor pusat', alamat: 'Jl. Rejosari II No. 64, Ngalalangan, Sardonoharjo, Ngaglik, Sleman, DIY 55581' },
+    { kota: 'BSD, cabang', alamat: 'Jl. Raya BSD, CDB 55, Sampora, Kec. Pagedangan, Kabupaten Tangerang, Banten 15339' }
+  ],
+  angka: [
+    { awal: '', nilai: 2, akhir: '', ket: 'Unit usaha di bawah grup' },
+    { awal: '±', nilai: 50, akhir: '', ket: 'Orang di tim Straight Up Digital' },
+    { awal: '', nilai: 70, akhir: '+', ket: 'Brand klien Straight Up Digital' },
+    { awal: '', nilai: 2, akhir: '', ket: 'Kota: Yogyakarta dan BSD' }
+  ],
+  bidang: ['Performance marketing', 'TikTok Ads', 'GMV Max', 'Iklan media sosial', 'Analitik dan laporan', 'Pertumbuhan brand']
+};
+
+const $ = (s) => document.querySelector(s);
+const GERAK = document.documentElement.classList.contains('gerak');
+
+/* ---------- util ---------- */
+function kosong(label) {
+  const c = document.createElement('span');
+  c.className = 'kosong';
+  c.textContent = 'Belum diisi: ' + label;
+  return c;
+}
+function normalWa(teks) {
+  let d = String(teks || '').replace(/\D/g, '');
+  if (d.startsWith('0')) d = '62' + d.slice(1);
+  else if (d.startsWith('8')) d = '62' + d;
+  return /^62\d{8,13}$/.test(d) ? d : '';
+}
+const WA = normalWa(DATA.nomorWa);
+DATA.nomorWaTampil = WA ? DATA.nomorWa.trim() : '';
+
+/* ---------- isi dari DATA (textContent, bukan HTML) ---------- */
+if (!DATA.email) $('#barisEmail').remove();
+const belumDiisi = [];
+document.querySelectorAll('[data-isi]').forEach((el) => {
+  const v = DATA[el.dataset.isi];
+  if (v) { el.textContent = v; return; }
+  belumDiisi.push(el.dataset.isi);
+  if ('cadangan' in el.dataset) {           // tampil rapi untuk pengunjung
+    if (el.dataset.cadangan) el.textContent = el.dataset.cadangan; else el.hidden = true;
+  } else { el.textContent = ''; el.appendChild(kosong(el.dataset.label)); }
+});
+if (belumDiisi.length) console.warn('[PT HTB] Data belum diisi di objek DATA:', [...new Set(belumDiisi)].join(', '));
+$('#alertWa').hidden = !!WA;
+if (DATA.nomorWa && !WA) {
+  $('#alertWa').hidden = false;
+  $('#alertWa').textContent = 'Nomor WhatsApp di DATA.nomorWa tidak valid ("' + DATA.nomorWa + '"). Gunakan format 0812xxxx atau 62812xxxx.';
+}
+$('#igStr').href = 'https://instagram.com/' + encodeURIComponent(DATA.instagramStr);
+$('#tahun').textContent = new Date().getFullYear();
+
+DATA.kantor.forEach((k) => {
+  const d = document.createElement('div'); d.className = 'kantor';
+  const b = document.createElement('b'); b.textContent = k.kota;
+  const s = document.createElement('span'); s.className = 'muted';
+  if (k.alamat) s.textContent = k.alamat; else s.appendChild(kosong('alamat lengkap'));
+  d.append(b, s); $('#kantor').appendChild(d);
+});
+
+/* footer: kantor & kontak dari DATA */
+DATA.kantor.forEach((k) => {
+  const li = document.createElement('li');
+  const b = document.createElement('b'); b.textContent = k.kota.split(',')[0]; b.style.display = 'block';
+  const sp = document.createElement('span'); sp.className = 'muted'; sp.textContent = k.alamat || '';
+  li.append(b, sp); $('#kakiKantor').appendChild(li);
+});
+if (WA) {
+  const li = document.createElement('li'); const a = document.createElement('a');
+  a.href = 'https://wa.me/' + WA; a.target = '_blank'; a.rel = 'noopener';
+  a.textContent = 'WhatsApp ' + DATA.nomorWaTampil; li.appendChild(a); $('#kakiKontak').appendChild(li);
+}
+if (DATA.email) {
+  const li = document.createElement('li'); li.textContent = DATA.email; $('#kakiKontak').appendChild(li);
+}
+const liIg = document.createElement('li'); const aIg = document.createElement('a');
+aIg.href = 'https://instagram.com/' + encodeURIComponent(DATA.instagramStr); aIg.target = '_blank'; aIg.rel = 'noopener';
+aIg.textContent = 'Instagram Straight Up Digital'; liIg.appendChild(aIg); $('#kakiKontak').appendChild(liIg);
+
+const elAngka = [];
+DATA.angka.forEach((a, i) => {
+  const d = document.createElement('div'); d.className = 'rv' + (i ? ' d' + Math.min(i, 3) : '');
+  const b = document.createElement('b'); b.textContent = a.awal + a.nilai + a.akhir;
+  const s = document.createElement('span'); s.textContent = a.ket;
+  d.append(b, s); $('#angka').appendChild(d);
+  elAngka.push({ el: b, a: a, jalan: false });
+});
+
+/* marquee: isi dua kali supaya bisa berputar mulus */
+const mq = $('#mq');
+[...DATA.bidang, ...DATA.bidang].forEach((t, i) => {
+  const s = document.createElement('span'); s.textContent = t;
+  if (i >= DATA.bidang.length) s.setAttribute('aria-hidden', 'true');
+  mq.appendChild(s);
+});
+if (!GERAK) [...mq.children].slice(DATA.bidang.length).forEach((s) => s.remove());
+
+/* kalimat menyala per kata */
+const kal = $('#kalimat');
+const kataEmas = ['hasil', 'nyata'];
+const kata = kal.textContent.trim().split(/\s+/);
+kal.textContent = '';
+const spanKata = kata.map((w, i) => {
+  const s = document.createElement('span');
+  s.className = 'k' + (kataEmas.includes(w.replace(/[^\p{L}]/gu, '').toLowerCase()) && i > 10 ? ' emas' : '');
+  s.textContent = w;
+  kal.appendChild(s);
+  if (i < kata.length - 1) kal.appendChild(document.createTextNode(' '));
+  return s;
+});
+
+/* ---------- animasi muncul saat terlihat ---------- */
+function hitung(item) {
+  if (item.jalan || !GERAK) return;
+  item.jalan = true;
+  const mulai = performance.now(), lama = 1400;
+  const langkah = (t) => {
+    const p = Math.min(1, (t - mulai) / lama);
+    const e = 1 - (1 - p) ** 3;
+    item.el.textContent = item.a.awal + Math.round(item.a.nilai * e) + item.a.akhir;
+    if (p < 1) requestAnimationFrame(langkah);
+  };
+  requestAnimationFrame(langkah);
+}
+const rvs = document.querySelectorAll('.rv');
+if (GERAK && 'IntersectionObserver' in window) {
+  const pengamat = new IntersectionObserver((entri) => {
+    entri.forEach((e) => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('in');
+      const n = elAngka.find((x) => e.target.contains(x.el));
+      if (n) hitung(n);
+      pengamat.unobserve(e.target);
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+  rvs.forEach((r) => pengamat.observe(r));
+} else {
+  rvs.forEach((r) => r.classList.add('in'));
+}
+
+/* ---------- efek yang mengikuti posisi gulir ---------- */
+const header = $('#atas'), progres = $('#progres'), heroIsi = $('#heroIsi');
+const pern = $('#tentang'), alur = $('#alur'), alurIsi = $('#alurIsi');
+const units = [...document.querySelectorAll('.unit')];
+const klamp = (v) => Math.max(0, Math.min(1, v));
+let antre = false;
+function perbarui() {
+  antre = false;
+  const y = window.scrollY, H = window.innerHeight;
+  const total = document.documentElement.scrollHeight - H;
+  progres.style.transform = 'scaleX(' + (total > 0 ? y / total : 0) + ')';
+  header.classList.toggle('kaca', y > 30);
+  if (!GERAK) return;
+
+  if (y < H * 1.2 && window.innerWidth > 900) {
+    heroIsi.style.transform = 'translateY(' + (y * 0.22) + 'px)';
+    heroIsi.style.opacity = String(1 - klamp(y / (H * 0.9)) * 0.85);
+  }
+
+  const r = pern.getBoundingClientRect();
+  const p = klamp(-r.top / Math.max(1, r.height - H));
+  const nyala = Math.round(p * 1.15 * spanKata.length);
+  spanKata.forEach((s, i) => s.classList.toggle('on', i < nyala));
+
+  if (window.innerWidth > 900) {
+    units.forEach((u, i) => {
+      const berikut = units[i + 1];
+      if (!berikut) { u.style.transform = ''; return; }
+      const jarak = berikut.getBoundingClientRect().top - u.getBoundingClientRect().top;
+      const q = klamp(1 - jarak / (u.offsetHeight + 28));
+      u.style.transform = 'scale(' + (1 - q * 0.05) + ')';
+      u.style.filter = 'brightness(' + (1 - q * 0.35) + ')';
+    });
+  } else units.forEach((u) => { u.style.transform = ''; u.style.filter = ''; });
+
+  const a = alur.getBoundingClientRect();
+  alurIsi.style.transform = 'scaleX(' + klamp((H * 0.85 - a.top) / (a.height + H * 0.2)) + ')';
+}
+window.addEventListener('scroll', () => { if (!antre) { antre = true; requestAnimationFrame(perbarui); } }, { passive: true });
+window.addEventListener('resize', perbarui);
+
+/* tulisan raksasa footer: ukuran huruf menyesuaikan lebar supaya tidak terpotong */
+function pasRaksasa() {
+  const box = $('#raksasa'), t = $('#raksasaTeks');
+  box.style.fontSize = '100px';
+  const lebar = t.getBoundingClientRect().width;
+  if (lebar > 0) box.style.fontSize = Math.min(190, Math.floor(100 * box.clientWidth / lebar * 0.98)) + 'px';
+}
+pasRaksasa();
+window.addEventListener('resize', pasRaksasa);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(pasRaksasa);
+perbarui();
+if (!GERAK) spanKata.forEach((s) => s.classList.add('on'));
+
+/* ---------- formulir leads -> WhatsApp ---------- */
+function setErr(id, inputId, pesan) {
+  const e = $(id); const i = $(inputId);
+  e.hidden = !pesan; e.textContent = pesan || '';
+  if (pesan) i.setAttribute('aria-invalid', 'true'); else i.removeAttribute('aria-invalid');
+  return !pesan;
+}
+$('#formLead').addEventListener('submit', (ev) => {
+  ev.preventDefault();
+  const nama = $('#fNama').value.trim();
+  const usaha = $('#fUsaha').value.trim();
+  const waUser = normalWa($('#fWa').value);
+  const unit = $('#fUnit').value;
+  const pesan = $('#fPesan').value.trim();
+  const ok = [
+    setErr('#eNama', '#fNama', nama ? '' : 'Nama wajib diisi.'),
+    setErr('#eWa', '#fWa', waUser ? '' : 'Nomor WhatsApp tidak valid. Contoh: 081234567890.'),
+    setErr('#ePesan', '#fPesan', pesan.length >= 10 ? '' : 'Ceritakan kebutuhan Anda, minimal 10 karakter.')
+  ].every(Boolean);
+  const box = $('#hasil');
+  box.hidden = false; box.className = 'hasil'; box.textContent = '';
+  if (!ok) { box.className = 'hasil gagal'; box.textContent = 'Pesan belum tersusun. Periksa kolom yang ditandai merah.'; return; }
+
+  const teks = 'Halo PT Hasil Tanpa Batas, saya ingin konsultasi.\n\n' +
+    'Nama: ' + nama + '\n' +
+    'Usaha/brand: ' + (usaha || '-') + '\n' +
+    'No. WA: +' + waUser + '\n' +
+    'Tujuan: ' + unit + '\n' +
+    'Kebutuhan: ' + pesan;
+
+  const judul = document.createElement('b');
+  const pre = document.createElement('pre'); pre.textContent = teks;
+  if (!WA) {
+    box.className = 'hasil gagal';
+    judul.textContent = 'Pesan sudah tersusun, tapi belum bisa dikirim: nomor WhatsApp perusahaan belum diisi.';
+    box.append(judul, pre);
+    return;
+  }
+  judul.textContent = 'Pesan siap. Tekan tombol di bawah untuk membuka WhatsApp.';
+  const a = document.createElement('a');
+  a.className = 'btn btn-g'; a.target = '_blank'; a.rel = 'noopener';
+  a.href = 'https://wa.me/' + WA + '?text=' + encodeURIComponent(teks);
+  a.textContent = 'Buka WhatsApp';
+  box.append(judul, pre, a);
+});
+}
+</script>
+</body>
+</html>
